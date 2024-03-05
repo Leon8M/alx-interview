@@ -1,12 +1,13 @@
 #!/usr/bin/python3
+
 """
-Bulding the islands 
+Builds the islands.
 """
 
 
 def island_perimeter(grid):
     """
-    Returns the perimeter of the island
+    Returns the perimeter of the island.
     """
     perimeter = 0
     rows = len(grid)
@@ -21,6 +22,7 @@ def island_perimeter(grid):
                     x = i + direction[0]
                     y = j + direction[1]
                     if (x < 0 or x >= rows or y < 0
-                        or y >= cols or grid[x][y] == 0):
-                            perimeter += 1
+                            or y >= cols or grid[x][y] == 0):
+                        perimeter += 1
+
     return perimeter
